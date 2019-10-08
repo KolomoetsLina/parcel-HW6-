@@ -1,0 +1,42 @@
+<!doctype html>
+
+<link rel="stylesheet" href="main.styl"/>
+
+<div id="app">
+
+    <div data-template="page"></div>
+  
+    <template id="home">
+      <h1>Home</h1>
+      <div data-component="slide"></div>
+      <input type="button" 
+             onclick="up({page: 'about'})" 
+             value="See about page"/>
+    </template>
+    
+    <template id="about">
+      <h1>About</h1>
+      <input type="button" 
+             onclick="up({page: 'home'})" 
+             value="Here is your home"/>
+    </template>
+    
+    <template id="slide1">
+        <h1>Presentation</h1>
+        <img src="https://www.gumilev-center.ru/wp-content/uploads/2017/11/pririrri-710x434.jpg" width="710">
+        <input type="button" 
+             onclick="up({page: 'home', slide: 'slide2'})" 
+             value="Next picture"/>
+    </template>
+    
+    <template id="slide2">
+        <h1>Presentation</h1>
+        <img src="https://9qjzgzbyth-flywheel.netdna-ssl.com/wp-content/uploads/2019/04/norway-travel-guide-1.jpg" width="710">
+        <input type="button" 
+             onclick="up({page: 'home', slide: 'slide1'})" 
+             value="Previous picture"/>
+    </template>
+      
+  </div>
+
+<script src="app.js"></script>

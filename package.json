@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "stylus": "^0.54.7"
+  },
+  "dependencies": {
+    "leftpad": "0.0.1",
+    "vue": "^2.6.10"
+  }
+}
